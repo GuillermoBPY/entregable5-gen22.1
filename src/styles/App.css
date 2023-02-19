@@ -89,7 +89,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 180px 1rem 1rem;
+  padding: 0 1rem 1rem;
   overflow-x: hidden;
   max-width: 1400px;
   margin: 0 auto;
