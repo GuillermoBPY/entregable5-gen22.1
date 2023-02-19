@@ -86,10 +86,10 @@
 }
 
 .pokedex__grid {
+  height: 100%;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 4rem;
   padding: 4rem 1rem 1rem;
   overflow-x: hidden;
   max-width: 1400px;
