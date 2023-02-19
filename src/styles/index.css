@@ -25,3 +25,8 @@ body{
 #root{
   height: 100%;
 }
+
+.App{
+  height: 100%;
+  padding-top: 160px;
+}

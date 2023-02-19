@@ -6,7 +6,6 @@
   justify-content: flex-end;
   background-color: #e5e5e5;
   height: 100%;
-  height: -webkit-fill-available;
 }
 
 .home__figure {
