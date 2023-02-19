@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: flex-end;
   background-color: #e5e5e5;
-  height: 100vh;
+  height: -webkit-fill-available;
+  height: 100%;
 }
 
 .home__figure {
