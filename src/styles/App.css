@@ -1,0 +1,96 @@
+.pokedex__header {
+  position: fixed;
+  background-color: #dd1a1a;
+  top: 0;
+  width: 100%;
+  height: 19%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pokedex__header--imgbox {
+  background: linear-gradient(
+    to top,
+    black 0%,
+    black 40%,
+    transparent 00%,
+    transparent 100%
+  );
+  padding-bottom: 1rem;
+}
+
+.pokedex__header--img {
+  min-width: 200px;
+  width: 60%;
+  max-width: 400px;
+}
+
+.pokeball {
+  height: 70%;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: black;
+  right: 10px;
+  top: 40x;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: grid;
+}
+.pokeball_circle1 {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+.pokeball_circle2 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: grid;
+}
+.pokeball_circle3 {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  border-radius: 50%;
+  animation: color-change-5x 1s linear infinite alternate both;
+}
+
+@keyframes color-change-5x {
+  0% {
+    background-color: #212121;
+  }
+
+  100% {
+    background: #dd1a1a;
+  }
+}
+
+.nametrainer {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  height: 36px;
+  background-color: white;
+  color: #dd1a1a;
+}
+
+.pokeballgif {
+  width: 50px;
+  margin-right: auto;
+}
+
+.pokedex__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 3.5rem 1rem 1rem;
+  overflow-x: hidden;
+  max-width: 1400px;
+  margin: 120px auto;
+}

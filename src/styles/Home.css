@@ -1,0 +1,129 @@
+.home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+
+.home__figure {
+  min-width: 300px;
+  width: 50%;
+  max-width: 600px;
+}
+.home_interactive {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.home__label {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    black 0%,
+    black 40%,
+    #dd1a1a 0%,
+    #dd1a1a 100%
+  );
+}
+
+.home__pokeball {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background-color: black;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: grid;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.home__pokeball_circle1 {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: block;
+}
+.home__pokeball_circle2 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: block;
+}
+.home__pokeball_circle3 {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  border-radius: 50%;
+  animation: color-change-5x 1s linear infinite alternate both;
+  display: block;
+}
+
+.home__h2 {
+  color: #dd1a1a;
+}
+.home p {
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.home_input {
+  min-height: 50px;
+  width: 300px;
+  padding: 0 1rem;
+  color: black;
+  font-size: 15px;
+  border: 1px solid #dd1a1a;
+  border-radius: 6px 0 0 6px;
+  background-color: #fff;
+}
+
+.home__button--submit {
+  min-height: 50px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #dd1a1a;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home__button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.home_input:focus,
+.home_input:focus-visible {
+  border-color: #3898ec;
+  outline: none;
+}
+
+.home__pokeballgif {
+  position: absolute;
+  width: 30%;
+  max-width: 150px;
+  bottom: 74px;
+  right: 0;
+}
