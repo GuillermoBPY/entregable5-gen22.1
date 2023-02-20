@@ -8,6 +8,7 @@
   margin: 0 auto;
   border: 5px solid transparent;
   border-radius: 10px;
+  background-color: white;
 }
 .pokecard__header {
   height: 30%;

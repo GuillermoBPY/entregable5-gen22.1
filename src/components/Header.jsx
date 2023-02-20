@@ -1,7 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
+
 const Header = () => {
-  const { nameTrainer } = useSelector((state) => state);
   return (
     <header className="pokedex__header">
       <div className="pokedex__header--imgbox">
@@ -18,10 +17,6 @@ const Header = () => {
           </span>
         </span>
       </span>
-      <h1 className="nametrainer">
-        <span>Welcome {nameTrainer}!</span>
-        <img className="pokeballgif" src="../../img/pokeball.gif" alt="" />
-      </h1>
     </header>
   );
 };

@@ -90,7 +90,9 @@
   align-items: center;
 }
 
-.home_input {
+.home_input,
+.podekex__form--input,
+select {
   min-height: 50px;
   width: 300px;
   padding: 0 1rem;
@@ -101,7 +103,16 @@
   background-color: #fff;
 }
 
-.home__button--submit {
+@media (max-width: 700px) {
+  .podekex__form--input,
+  select {
+    min-width: 250px;
+    width: 70%;
+  }
+}
+
+.home__button--submit,
+.podekex__form--btn {
   min-height: 50px;
   padding: 0.5em 1em;
   border: none;
@@ -113,12 +124,17 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.home__button--submit:hover {
+.home__button--submit:hover,
+.podekex__form--btn:hover {
   background-color: #5e5dcd;
 }
 
 .home_input:focus,
-.home_input:focus-visible {
+.home_input:focus-visible,
+.podekex__form--input:focus,
+.podekex__form--input:focus-visible,
+select:focus,
+select:checked {
   border-color: #3898ec;
   outline: none;
 }
@@ -129,4 +145,8 @@
   max-width: 150px;
   bottom: 74px;
   right: 0;
+}
+
+select::selection {
+  background-color: red;
 }
