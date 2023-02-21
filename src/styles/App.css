@@ -87,7 +87,8 @@
   margin: 0 auto;
 }
 
-.nametrainer, .notfounbox__h2 span {
+.nametrainer,
+.notfounbox__h2 span {
   color: #dd1a1a;
 }
 
@@ -134,10 +135,15 @@ a {
   color: inherit;
 }
 
-.notfounbox__h2{
+.notfounbox__h2 {
   text-align: center;
 }
-.notfounbox__img{
+.notfounbox__img {
   max-width: 400px;
   margin: 4rem auto;
+}
+
+.displaybox {
+  text-align: center;
+  line-height: 2rem;
 }

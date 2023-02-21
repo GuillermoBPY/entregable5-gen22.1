@@ -44,14 +44,18 @@ const Pokedex = () => {
           <img className="pokeballgif" src="../../img/pokeball.gif" alt="" />
         </p>
       </div>
-      <div>
+      <div className="displaybox">
         <h4>Showing {displayPoke} Pokémons</h4>
         <form onSubmit={handledispay} action="">
           <label htmlFor="">
-            Here you can set the total quantity to display. Set from 1 to 1279.
+            Set the quantity to display from 1 to 1279 Pokémons.
           </label>
-          <input type="number" placeholder="20" />
-          <button>Display</button>
+          <input
+            className="pokedex__displayInput"
+            type="number"
+            placeholder="20"
+          />
+          <button className="pokedex__displaybtn">Display</button>
         </form>
       </div>
 
@@ -66,7 +70,7 @@ const Pokedex = () => {
           <button className="podekex__form--btn">Search</button>
         </form>
         <form className="pokedex__form--select">
-          <label htmlFor="typeselect">Or select you Pokémon type</label>
+          <label htmlFor="typeselect">Select you Pokémon type</label>
           <select onChange={handlselect} defaultValue="">
             <option value="">All types</option>
             {types.map((type) => (

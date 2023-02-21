@@ -112,7 +112,8 @@ select {
 }
 
 .home__button--submit,
-.podekex__form--btn {
+.podekex__form--btn,
+.pokedex__displaybtn {
   min-height: 50px;
   padding: 0.5em 1em;
   border: none;
@@ -125,12 +126,15 @@ select {
 }
 
 .home__button--submit:hover,
-.podekex__form--btn:hover {
+.podekex__form--btn:hover,
+.pokedex__displaybtn:hover {
   background-color: #5e5dcd;
 }
 
 .home_input:focus,
 .home_input:focus-visible,
+.pokedex__displayInput:focus,
+.pokedex__displayInput:focus-visible,
 .podekex__form--input:focus,
 .podekex__form--input:focus-visible,
 select:focus,
@@ -149,4 +153,19 @@ select:checked {
 
 select::selection {
   background-color: red;
+}
+
+.pokedex__displayInput {
+  min-height: 50px;
+  width: 85px;
+  padding: 0 1rem;
+  color: black;
+  font-size: 15px;
+  border: 1px solid #dd1a1a;
+  border-radius: 6px 0 0 6px;
+  background-color: #fff;
+}
+.pokedex__displaybtn {
+  padding: 1rem;
+  height: 10px;
 }
