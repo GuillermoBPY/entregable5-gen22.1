@@ -22,6 +22,7 @@ const Pokemon = () => {
         console.log(err);
       });
   };
+  console.log(pokemon)
   useEffect(callPokemon, [pokename.name]);
   if (!showPokemon) {
     return (
@@ -48,7 +49,7 @@ const Pokemon = () => {
             className={`pokemon__info--img bg-${pokemon?.types[0].type.name}`}
           >
             <img
-              src={pokemon?.sprites.other["official-artwork"].front_default}
+              src={pokemon?.sprites.other["home"].front_default}
               alt=""
             />
           </div>

@@ -30,7 +30,7 @@ const PokeCard = ({ pokemon, filterValue }) => {
             >
               <img
                 className="pokecard__header--img"
-                src={pokeInfo.sprites.other["official-artwork"].front_default}
+                src={pokeInfo.sprites.other["home"].front_default}
                 alt=""
               />
             </header>

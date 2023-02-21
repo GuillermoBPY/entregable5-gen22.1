@@ -32,7 +32,6 @@ const Pokedex = () => {
     if (e.target[0].value > 0 && e.target[0].value <= 1279)
       setdisplayPoke(e.target[0].value);
   };
-  console.log(pokemons);
   useEffect(getAllPokemons, [displayPoke]);
   return (
     <>
