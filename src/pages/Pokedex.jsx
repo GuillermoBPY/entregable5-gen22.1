@@ -45,24 +45,27 @@ const Pokedex = () => {
         </p>
       </div>
       <div className="displaybox">
-        <h4>Showing {displayPoke} Pokémons</h4>
+        <h4>
+          Showing {displayPoke} {displayPoke === "1" ? "Pokémon" : "Pokémons"}
+        </h4>
         <form onSubmit={handledispay} action="">
           <label htmlFor="">
             Set the quantity to display from 1 to 1279 Pokémons.
           </label>
-          <input
-            className="pokedex__displayInput"
-            type="number"
-            placeholder="20"
-          />
-          <button className="pokedex__displaybtn">Display</button>
+          <div>
+            <input
+              className="pokedex__displayInput"
+              type="number"
+            />
+            <button className="pokedex__displaybtn">Display</button>
+          </div>
         </form>
       </div>
 
       <div className="pokedex__filters">
         <form onSubmit={handleSubmit} className="podekex__form">
           <input
-            placeholder="Enter a Pokémon name"
+            placeholder="Search by a Pokémon name"
             className="podekex__form--input"
             id="podekex__form--input"
             type="text"

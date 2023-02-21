@@ -52,14 +52,15 @@ const Pokemon = () => {
               alt=""
             />
           </div>
-          <div>
+          <div className="pokemon__stats">
             <h3>#{pokemon?.id}</h3>
             <h1>{pokemon?.name}</h1>
             <div>
+              <h2 className="stats__title">Stats</h2>
               <ul className="stat__grid">
                 {pokemon?.stats.map((stat) => (
                   <li className="stat" key={stat.stat.name}>
-                    <div>
+                    <div className="stat__box">
                       <span>{stat.stat.name}</span>
                       <span>{stat.base_stat}/150</span>
                     </div>
@@ -75,6 +76,7 @@ const Pokemon = () => {
               </ul>
             </div>
           </div>
+          <h2 className="move_title">Moves</h2>
           <div className="pokemon__moves">
             {pokemon?.moves.map((move) => (
               <span key={move.move.name}>
