@@ -24,7 +24,12 @@ const Home = () => {
         <h2 className="home__h2">Hello trainer!</h2>
         <p>Please, enter your name to begin.</p>
         <form className="home__form" onSubmit={handlesubmit}>
-          <input placeholder="Trainer name..." className="home_input" id="name" type="text" />
+          <input
+            placeholder="Trainer name..."
+            className="home_input"
+            id="name"
+            type="text"
+          />
           <button className="home__button--submit">Start</button>
         </form>
       </div>

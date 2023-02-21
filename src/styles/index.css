@@ -14,20 +14,20 @@ ul {
   list-style: none;
 }
 
-html{
+html {
   height: -webkit-fill-available;
 }
 
-body{
+body {
   height: 100%;
   background-color: #e5e5e5;
 }
 
-#root{
+#root {
   height: 100%;
 }
 
-.App{
+.App {
   height: 100%;
   padding-top: 160px;
   background-color: #e5e5e5;

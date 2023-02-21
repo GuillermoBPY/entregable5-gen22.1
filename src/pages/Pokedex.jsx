@@ -53,10 +53,7 @@ const Pokedex = () => {
             Set the quantity to display from 1 to 1279 Pokémons.
           </label>
           <div>
-            <input
-              className="pokedex__displayInput"
-              type="number"
-            />
+            <input className="pokedex__displayInput" type="number" />
             <button className="pokedex__displaybtn">Display</button>
           </div>
         </form>

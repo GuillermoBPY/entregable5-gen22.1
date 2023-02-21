@@ -56,16 +56,17 @@
   text-transform: capitalize;
 }
 
-.pokemon__stats h1, .pokemon__stats h3{
+.pokemon__stats h1,
+.pokemon__stats h3 {
   text-align: center;
   text-transform: capitalize;
 }
 
-.stat__box{
+.stat__box {
   display: flex;
   justify-content: space-between;
 }
 
-.stats__title{
+.stats__title {
   margin-bottom: 1rem;
 }
