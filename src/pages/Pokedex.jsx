@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import types from "../json/types.json";
 import { useNavigate } from "react-router-dom";
 
+
 const Pokedex = () => {
   const [pokemons, setpokemons] = useState();
   const [displayPoke, setdisplayPoke] = useState(20);
