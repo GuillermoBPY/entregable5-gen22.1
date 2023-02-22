@@ -27,8 +27,23 @@
   text-transform: capitalize;
 }
 .stat__level--box {
+  width: 0;
   background-color: white;
-  width: 100%px;
+  animation-name: barra;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes barra {
+  from{
+    width: 0%;
+    display: none;
+  }
+  to {
+    width: 100%;
+    display: block
+  }
 }
 .stat__level {
   height: 20px;
@@ -42,6 +57,7 @@
 }
 
 .pokemon__moves {
+  padding-bottom: 1rem;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;

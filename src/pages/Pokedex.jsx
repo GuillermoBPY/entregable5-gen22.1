@@ -69,7 +69,7 @@ const Pokedex = () => {
           <button className="podekex__form--btn">Search</button>
         </form>
         <form className="pokedex__form--select">
-          <label htmlFor="typeselect">Select you Pokémon type</label>
+          <label htmlFor="typeselect">Filter displayed Pokémon by type.</label>
           <select onChange={handlselect} defaultValue="">
             <option value="">All types</option>
             {types.map((type) => (
